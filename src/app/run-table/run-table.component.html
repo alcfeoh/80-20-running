@@ -13,10 +13,18 @@
       </div>
       <div class="level-right">
         <div class="level-item" *ngFor="let segment of run.segments">
-          {{segment.duration}} {{segment.unit}}
-          <app-zone-tag [index]="segment.zone"></app-zone-tag>
+          <div *ngIf="segment.isInterval(); else regularRun">
+            {{segment.repeats}} x
+            ({{segment.segment1.duration}} {{segment.segment1.unit}} <app-zone-tag [index]="segment.segment1.zone"></app-zone-tag> /
+            {{segment.segment2.duration}} {{segment.segment2.unit}} <app-zone-tag [index]="segment.segment2.zone"></app-zone-tag>)
+          </div>
+          <ng-template #regularRun>
+            {{segment.duration}} {{segment.unit}}
+            <app-zone-tag [index]="segment.zone"></app-zone-tag>
+          </ng-template>
         </div>
       </div>
     </nav>
   </div>
 </nav>
+
