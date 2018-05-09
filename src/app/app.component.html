@@ -1,15 +1,23 @@
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    80 20 running
-  </div>
-  <div class="navbar-end">
-    <a class="navbar-item" routerLink="">
-      Schedule
-    </a>
-    <a class="navbar-item" routerLink="allRuns">
-      All runs
-    </a>
-  </div>
-</nav>
+<section class="navbar-header">
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" routerLink="">
+      80 20 running
+      </a>
+    </div>
+    <div class="navbar-end">
+      <a class="navbar-item" routerLink="">
+        Schedule
+      </a>
+      <a class="navbar-item" routerLink="allRuns">
+        All runs
+      </a>
+    </div>
+  </nav>
+</section>
 
-<router-outlet></router-outlet>
+<section class="main-content">
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</section>

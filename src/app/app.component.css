@@ -1,1 +1,7 @@
+.navbar {
+  border-bottom: lightgray 1px solid;
+}
 
+.main-content {
+  margin-top: 70px;
+}
