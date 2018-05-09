@@ -1,12 +1,15 @@
-
-<app-run-table title="Recovery Runs" [runs]="recoveryRuns"></app-run-table>
-
-<app-run-table title="Foundation Runs" [runs]="foundationRuns"></app-run-table>
-
-<app-run-table title="Long Runs" [runs]="longRuns"></app-run-table>
-
-<app-run-table title="Fast Finish Runs" [runs]="fastFinishRuns"></app-run-table>
-
-<app-run-table title="Hill Repetition Runs" [runs]="hillRepsRuns"></app-run-table>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    80 20 running
+  </div>
+  <div class="navbar-end">
+    <a class="navbar-item" routerLink="">
+      Schedule
+    </a>
+    <a class="navbar-item" routerLink="allRuns">
+      All runs
+    </a>
+  </div>
+</nav>
 
 <router-outlet></router-outlet>

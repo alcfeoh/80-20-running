@@ -12,22 +12,4 @@ import {HillRepetitionRun} from './hill-repetition-run';
 })
 export class AppComponent {
 
-  recoveryRuns: Array<RecoveryRun> = [];
-  foundationRuns: Array<FoundationRun> = [];
-  longRuns: Array<LongRun> = [];
-  fastFinishRuns: Array<FastFinishRun> = [];
-  hillRepsRuns: Array<HillRepetitionRun> = [];
-
-  constructor() {
-    for (let i = 1; i <= 9;  i++) {
-      this.recoveryRuns.push(new RecoveryRun(i));
-      this.foundationRuns.push(new FoundationRun(i));
-      this.longRuns.push(new LongRun(i));
-      this.fastFinishRuns.push(new FastFinishRun(i));
-      this.hillRepsRuns.push(new HillRepetitionRun(i));
-    }
-    this.hillRepsRuns.push(new HillRepetitionRun(10));
-    this.hillRepsRuns.push(new HillRepetitionRun(11));
-    this.hillRepsRuns.push(new HillRepetitionRun(12));
-  }
 }

@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {ScheduleComponent} from './schedule/schedule.component';
+import {AllRunsComponent} from './all-runs/all-runs.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path: '', component: ScheduleComponent},
+  {path: 'allRuns', component: AllRunsComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
