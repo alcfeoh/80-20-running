@@ -4,6 +4,7 @@ import {RecoveryRun} from '../recovery-run';
 import {HillRepetitionRun} from '../hill-repetition-run';
 import {LongRun} from '../long-run';
 import {FoundationRun} from '../foundation-run';
+import {TempoRun} from '../tempo-run';
 
 @Component({
   selector: 'app-all-runs',
@@ -17,6 +18,7 @@ export class AllRunsComponent {
   longRuns: Array<LongRun> = [];
   fastFinishRuns: Array<FastFinishRun> = [];
   hillRepsRuns: Array<HillRepetitionRun> = [];
+  tempoRuns: Array<TempoRun> = [];
 
   constructor() {
     for (let i = 1; i <= 9;  i++) {
@@ -25,6 +27,7 @@ export class AllRunsComponent {
       this.longRuns.push(new LongRun(i));
       this.fastFinishRuns.push(new FastFinishRun(i));
       this.hillRepsRuns.push(new HillRepetitionRun(i));
+      this.tempoRuns.push(new TempoRun(i));
     }
     this.hillRepsRuns.push(new HillRepetitionRun(10));
     this.hillRepsRuns.push(new HillRepetitionRun(11));
