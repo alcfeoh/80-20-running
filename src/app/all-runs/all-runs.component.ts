@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import {FastFinishRun} from '../fast-finish-run';
-import {RecoveryRun} from '../recovery-run';
-import {HillRepetitionRun} from '../hill-repetition-run';
-import {LongRun} from '../long-run';
-import {FoundationRun} from '../foundation-run';
-import {TempoRun} from '../tempo-run';
+import {FastFinishRun} from '../run-types/fast-finish-run';
+import {RecoveryRun} from '../run-types/recovery-run';
+import {HillRepetitionRun} from '../run-types/hill-repetition-run';
+import {LongRun} from '../run-types/long-run';
+import {FoundationRun} from '../run-types/foundation-run';
+import {TempoRun} from '../run-types/tempo-run';
+import {ShortIntervalRun} from '../run-types/short-interval-run';
 
 @Component({
   selector: 'app-all-runs',
@@ -19,6 +20,7 @@ export class AllRunsComponent {
   fastFinishRuns: Array<FastFinishRun> = [];
   hillRepsRuns: Array<HillRepetitionRun> = [];
   tempoRuns: Array<TempoRun> = [];
+  shortIntRuns: Array<ShortIntervalRun> = [];
 
   constructor() {
     for (let i = 1; i <= 9;  i++) {
@@ -28,6 +30,7 @@ export class AllRunsComponent {
       this.fastFinishRuns.push(new FastFinishRun(i));
       this.hillRepsRuns.push(new HillRepetitionRun(i));
       this.tempoRuns.push(new TempoRun(i));
+      this.shortIntRuns.push(new ShortIntervalRun(i));
     }
     this.hillRepsRuns.push(new HillRepetitionRun(10));
     this.hillRepsRuns.push(new HillRepetitionRun(11));

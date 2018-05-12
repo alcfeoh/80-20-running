@@ -1,5 +1,5 @@
 import {Run} from './run';
-import {Segment} from './segment';
+import {Segment} from '../segment';
 
 export class FoundationRun extends Run {
 

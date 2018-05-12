@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {Run} from '../run';
+import {Run} from '../run-types/run';
 
 @Component({
   selector: 'app-run-table',

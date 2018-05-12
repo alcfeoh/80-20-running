@@ -1,7 +1,7 @@
 import {Run} from './run';
-import {Segment} from './segment';
-import {IntervalSegment} from './interval-segment';
-import {Unit, Zone} from './types';
+import {Segment} from '../segment';
+import {IntervalSegment} from '../interval-segment';
+import {Unit, Zone} from '../types';
 
 export class HillRepetitionRun extends Run {
 

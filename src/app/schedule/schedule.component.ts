@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {FastFinishRun} from '../fast-finish-run';
-import {FoundationRun} from '../foundation-run';
-import {HillRepetitionRun} from '../hill-repetition-run';
-import {RecoveryRun} from '../recovery-run';
-import {LongRun} from '../long-run';
+import {FastFinishRun} from '../run-types/fast-finish-run';
+import {FoundationRun} from '../run-types/foundation-run';
+import {HillRepetitionRun} from '../run-types/hill-repetition-run';
+import {RecoveryRun} from '../run-types/recovery-run';
+import {LongRun} from '../run-types/long-run';
 
 @Component({
   selector: 'app-schedule',
