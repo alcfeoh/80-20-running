@@ -1,6 +1,11 @@
-<app-run-table title="Monday" [runs]="[monRun]"></app-run-table>
-<app-run-table title="Tuesday" [runs]="[tueRun]"></app-run-table>
-<app-run-table title="Wednesday" [runs]="[wedRun]"></app-run-table>
-<app-run-table title="Thursday" [runs]="[thuRun]"></app-run-table>
-<app-run-table title="Friday" [runs]="[friRun]"></app-run-table>
-<app-run-table title="Saturday" [runs]="[satRun]"></app-run-table>
+Week:
+<select name="week" [(ngModel)]="currentWeek">
+  <option *ngFor="let week of weeksMap.keys()" [ngValue]="week">{{week}}</option>
+</select>
+
+<app-run-table title="Monday" [runs]="getRunForDay(0)"></app-run-table>
+<app-run-table title="Tuesday" [runs]="getRunForDay(1)"></app-run-table>
+<app-run-table title="Wednesday" [runs]="getRunForDay(2)"></app-run-table>
+<app-run-table title="Thursday" [runs]="getRunForDay(3)"></app-run-table>
+<app-run-table title="Friday" [runs]="getRunForDay(4)"></app-run-table>
+<app-run-table title="Saturday" [runs]="getRunForDay(5)"></app-run-table>
