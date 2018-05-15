@@ -1,6 +1,6 @@
 Week:
-<select name="week" [(ngModel)]="currentWeek">
-  <option *ngFor="let week of weeksMap.keys()" [ngValue]="week">{{week}}</option>
+<select name="week" [(ngModel)]="currentWeek" (ngModelChange)="setWeek()">
+  <option *ngFor="let week of weekNumbers" [ngValue]="week">{{week}}</option>
 </select>
 
 <app-run-table title="Monday" [runs]="getRunForDay(0)"></app-run-table>
