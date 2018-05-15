@@ -8,6 +8,7 @@ import { ZoneTagComponent } from './zone-tag/zone-tag.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { AllRunsComponent } from './all-runs/all-runs.component';
 import {FormsModule} from '@angular/forms';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {FormsModule} from '@angular/forms';
     RunTableComponent,
     ZoneTagComponent,
     ScheduleComponent,
-    AllRunsComponent
+    AllRunsComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,

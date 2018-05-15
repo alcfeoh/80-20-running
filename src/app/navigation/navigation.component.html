@@ -1,0 +1,22 @@
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" routerLink="">
+      80 20 running
+    </a>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" (click)="toggle = !toggle">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu" [class.is-active]="toggle">
+    <div class="navbar-end">
+      <a class="navbar-item" routerLink="" (click)="toggle = false">
+        Schedule
+      </a>
+      <a class="navbar-item" routerLink="allRuns" (click)="toggle = false">
+        All runs
+      </a>
+    </div>
+  </div>
+</nav>
