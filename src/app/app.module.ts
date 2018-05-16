@@ -9,6 +9,8 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { AllRunsComponent } from './all-runs/all-runs.component';
 import {FormsModule} from '@angular/forms';
 import { NavigationComponent } from './navigation/navigation.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { NavigationComponent } from './navigation/navigation.component';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
