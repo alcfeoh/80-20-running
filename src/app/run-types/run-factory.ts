@@ -9,6 +9,7 @@ import {CruiseIntervalRun} from './cruise-interval-run';
 import {LongIntervalRun} from './long-interval-run';
 import {LongRunSpeedPlay} from './long-run-speed-play';
 import {LongRunFastFinish} from './long-run-fast-finish';
+import {MixedIntervalRun} from './mixed-interval-run';
 
 export function rec(index: number): RecoveryRun {
   return new RecoveryRun(index);
@@ -52,6 +53,10 @@ export function crint(index: number): CruiseIntervalRun {
 
 export function lgint(index: number): LongIntervalRun {
   return new LongIntervalRun(index);
+}
+
+export function mxint(index: number): MixedIntervalRun {
+  return new MixedIntervalRun(index);
 }
 
 
