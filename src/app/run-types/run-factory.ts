@@ -10,6 +10,7 @@ import {LongIntervalRun} from './long-interval-run';
 import {LongRunSpeedPlay} from './long-run-speed-play';
 import {LongRunFastFinish} from './long-run-fast-finish';
 import {MixedIntervalRun} from './mixed-interval-run';
+import {SpeedPlayRun} from './speed-play-run';
 
 export function rec(index: number): RecoveryRun {
   return new RecoveryRun(index);
@@ -17,6 +18,10 @@ export function rec(index: number): RecoveryRun {
 
 export function ff(index: number): FastFinishRun {
   return new FastFinishRun(index);
+}
+
+export function sp(index: number): SpeedPlayRun {
+  return new SpeedPlayRun(index);
 }
 
 export function foun(index: number): FoundationRun {
