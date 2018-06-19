@@ -1,1 +1,16 @@
-<span [ngClass]="classes">Zone {{index}}</span>
+<span [ngClass]="classes" (click)="showDetails = ! showDetails">Zone {{index}}</span>
+
+<div class="modal" [class.is-active]="showDetails">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <article class="message is-info">
+      <div class="message-header">
+        <p>Zone {{index}}</p>
+        <button class="delete" aria-label="delete"  (click)="showDetails = ! showDetails"></button>
+      </div>
+      <div class="message-body">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>
+      </div>
+    </article>
+  </div>
+</div>

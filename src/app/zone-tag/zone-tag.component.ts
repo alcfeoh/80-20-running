@@ -11,6 +11,8 @@ export class ZoneTagComponent implements OnChanges {
   @Input()
   index: Zone;
 
+  showDetails = false;
+
   classes;
 
   ngOnChanges() {
