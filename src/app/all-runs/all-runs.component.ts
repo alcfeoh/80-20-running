@@ -8,6 +8,7 @@ import {TempoRun} from '../run-types/tempo-run';
 import {ShortIntervalRun} from '../run-types/short-interval-run';
 import {LongIntervalRun} from '../run-types/long-interval-run';
 import {LongRunSpeedPlay} from '../run-types/long-run-speed-play';
+import {ff, foun, getRuns, hill, lgint, long, longsp, rec, shint, temp} from '../run-types/run-factory';
 
 @Component({
   selector: 'app-all-runs',
@@ -16,34 +17,14 @@ import {LongRunSpeedPlay} from '../run-types/long-run-speed-play';
 })
 export class AllRunsComponent {
 
-  recoveryRuns: Array<RecoveryRun> = [];
-  foundationRuns: Array<FoundationRun> = [];
-  longRuns: Array<LongRun> = [];
-  fastFinishRuns: Array<FastFinishRun> = [];
-  hillRepsRuns: Array<HillRepetitionRun> = [];
-  tempoRuns: Array<TempoRun> = [];
-  shortIntRuns: Array<ShortIntervalRun> = [];
-  longIntRuns: Array<LongIntervalRun> = [];
-  longRunsSpeedPlay: Array<LongRunSpeedPlay> = [];
-
-  constructor() {
-    for (let i = 1; i <= 9;  i++) {
-      this.recoveryRuns.push(new RecoveryRun(i));
-      this.foundationRuns.push(new FoundationRun(i));
-      this.longRuns.push(new LongRun(i));
-      this.fastFinishRuns.push(new FastFinishRun(i));
-      this.hillRepsRuns.push(new HillRepetitionRun(i));
-      this.tempoRuns.push(new TempoRun(i));
-      this.shortIntRuns.push(new ShortIntervalRun(i));
-      this.longIntRuns.push(new LongIntervalRun(i));
-      this.longRunsSpeedPlay.push(new LongRunSpeedPlay(i));
-    }
-    this.longRunsSpeedPlay.pop();
-    this.longRunsSpeedPlay.pop();
-    this.longRunsSpeedPlay.pop();
-    this.longIntRuns.push(new LongIntervalRun(10));
-    this.hillRepsRuns.push(new HillRepetitionRun(10));
-    this.hillRepsRuns.push(new HillRepetitionRun(11));
-    this.hillRepsRuns.push(new HillRepetitionRun(12));
-  }
+  recoveryRuns: Array<RecoveryRun> = getRuns(9, rec);
+  foundationRuns: Array<FoundationRun> = getRuns(9, foun);
+  longRuns: Array<LongRun> = getRuns(9, long);
+  fastFinishRuns: Array<FastFinishRun> = getRuns(9, ff);
+  hillRepsRuns: Array<HillRepetitionRun> = getRuns(12, hill);
+  tempoRuns: Array<TempoRun> = getRuns(9, temp);
+  shortIntRuns: Array<ShortIntervalRun> = getRuns(9, shint);
+  longIntRuns: Array<LongIntervalRun> = getRuns(10, lgint);
+  longRunsSpeedPlay: Array<LongRunSpeedPlay> = getRuns(6, longsp);
+  
 }

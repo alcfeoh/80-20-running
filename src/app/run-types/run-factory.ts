@@ -64,5 +64,13 @@ export function mxint(index: number): MixedIntervalRun {
   return new MixedIntervalRun(index);
 }
 
+export function getRuns<T>(end: number, runFactory: (index: number) => T): T[] {
+  const res = [];
+  for (let i = 1; i <= end; i++) {
+    res.push(runFactory(i));
+  }
+  return res;
+}
+
 
 
