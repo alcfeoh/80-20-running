@@ -1,17 +1,3 @@
-<app-run-table title="Recovery Runs" [runs]="recoveryRuns"></app-run-table>
+<app-run-table *ngFor="let runs of allRuns" [title]="runs[0].name" [runs]="runs">
 
-<app-run-table title="Foundation Runs" [runs]="foundationRuns"></app-run-table>
-
-<app-run-table title="Long Runs" [runs]="longRuns"></app-run-table>
-
-<app-run-table title="Long Runs with Speed Play" [runs]="longRunsSpeedPlay"></app-run-table>
-
-<app-run-table title="Fast Finish Runs" [runs]="fastFinishRuns"></app-run-table>
-
-<app-run-table title="Hill Repetition Runs" [runs]="hillRepsRuns"></app-run-table>
-
-<app-run-table title="Tempo Runs" [runs]="tempoRuns"></app-run-table>
-
-<app-run-table title="Short Interval Runs" [runs]="shortIntRuns"></app-run-table>
-
-<app-run-table title="Long Interval Runs" [runs]="longIntRuns"></app-run-table>
+</app-run-table>
