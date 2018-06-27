@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { ZoneTagComponent } from './zone-tag.component';
+import {ZoneTagComponent} from './zone-tag.component';
 
 describe('ZoneTagComponent', () => {
   let component: ZoneTagComponent;

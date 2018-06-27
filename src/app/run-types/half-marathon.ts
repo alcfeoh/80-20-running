@@ -4,7 +4,7 @@ import {Segment} from '../segment';
 export class HalfMarathon extends Run {
 
   constructor() {
-    super(null, 'Half Marathon');
+    super(1, 'Half Marathon');
     this.segments.push(new Segment(13.1, 'miles', 4));
   }
 }

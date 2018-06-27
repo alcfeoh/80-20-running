@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {crint, ff, foun, hill, lgint, long, longff, longsp, mxint, rec, shint, sp, temp} from '../run-types/run-factory';
 import {Run} from '../run-types/run';
 import {HalfMarathon} from '../run-types/half-marathon';

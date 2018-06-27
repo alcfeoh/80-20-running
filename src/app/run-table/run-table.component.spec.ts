@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { RunTableComponent } from './run-table.component';
+import {RunTableComponent} from './run-table.component';
 
 describe('RunTableComponent', () => {
   let component: RunTableComponent;

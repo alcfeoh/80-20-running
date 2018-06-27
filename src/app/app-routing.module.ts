@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
 import {ScheduleComponent} from './schedule/schedule.component';
 import {AllRunsComponent} from './all-runs/all-runs.component';
 
