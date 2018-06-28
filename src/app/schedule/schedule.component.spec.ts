@@ -1,6 +1,9 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {ScheduleComponent} from './schedule.component';
+import {RunTableComponent} from '../run-table/run-table.component';
+import {AllRunsComponent} from '../all-runs/all-runs.component';
+import {ZoneTagComponent} from '../zone-tag/zone-tag.component';
 
 describe('ScheduleComponent', () => {
   let component: ScheduleComponent;
@@ -8,7 +11,7 @@ describe('ScheduleComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ScheduleComponent ]
+      declarations: [AllRunsComponent, RunTableComponent, ZoneTagComponent]
     })
     .compileComponents();
   }));

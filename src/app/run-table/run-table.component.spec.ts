@@ -1,6 +1,7 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {RunTableComponent} from './run-table.component';
+import {ZoneTagComponent} from '../zone-tag/zone-tag.component';
 
 describe('RunTableComponent', () => {
   let component: RunTableComponent;
@@ -8,7 +9,7 @@ describe('RunTableComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RunTableComponent ]
+      declarations: [ RunTableComponent, ZoneTagComponent ]
     })
     .compileComponents();
   }));
