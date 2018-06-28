@@ -4,8 +4,7 @@ import {HalfMarathon} from '../run-types/half-marathon';
 
 @Component({
   selector: 'app-all-runs',
-  templateUrl: './all-runs.component.html',
-  styleUrls: ['./all-runs.component.css']
+  templateUrl: './all-runs.component.html'
 })
 export class AllRunsComponent {
 

@@ -5,8 +5,7 @@ import {HalfMarathon} from '../run-types/half-marathon';
 
 @Component({
   selector: 'app-schedule',
-  templateUrl: './schedule.component.html',
-  styleUrls: ['./schedule.component.css']
+  templateUrl: './schedule.component.html'
 })
 export class ScheduleComponent {
 
