@@ -4,6 +4,7 @@ import {ScheduleComponent} from './schedule.component';
 import {RunTableComponent} from '../run-table/run-table.component';
 import {AllRunsComponent} from '../all-runs/all-runs.component';
 import {ZoneTagComponent} from '../zone-tag/zone-tag.component';
+import {FormsModule} from '@angular/forms';
 
 describe('ScheduleComponent', () => {
   let component: ScheduleComponent;
@@ -11,7 +12,8 @@ describe('ScheduleComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [AllRunsComponent, RunTableComponent, ZoneTagComponent]
+      declarations: [ScheduleComponent, AllRunsComponent, RunTableComponent, ZoneTagComponent],
+      imports: [FormsModule]
     })
     .compileComponents();
   }));
