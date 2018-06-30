@@ -12,7 +12,7 @@ describe('AppComponent', () => {
       imports: [
         RouterTestingModule
       ],
-      declarations: [AppComponent, AllRunsComponent, RunTableComponent, ZoneTagComponent, NavigationComponent],
+      declarations: [AppComponent, NavigationComponent, AllRunsComponent, RunTableComponent, ZoneTagComponent, NavigationComponent],
     }).compileComponents();
   }));
   it('should create the app', async(() => {
